@@ -48,3 +48,9 @@ rosrun turtlebot_ddpg ddpg_network_turtlebot3_original_ddpg.py
 ```
 
 
+General issues
+1. Issue with xhost display to launch rviz and Gazebo run this command in separate window
+    ~~~bash
+    xhost +
+    xhost local:docker
+    ~~~
