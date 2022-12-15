@@ -12,10 +12,12 @@ For running D* lite Demo
 roslaunch locobot_control main.launch use_sim:=true
 
 # Different terminal
-rosrun locobot_control main2.py
+cd /root/low_cost_ws/src/pyrobot/robots/LoCoBot/locobot_control
+python main2.py
 
 # In a new terminal
-rosrun pyrobot test.py
+cd /root/low_cost_ws/src/pyrobot/examples/locobot/navigation
+python test.py
 ```
 
 For running SRRT Demo
@@ -23,7 +25,8 @@ For running SRRT Demo
 roslaunch locobot_control main.launch use_sim:=true
 
 # In a new terminal
-rosrun locobot_control rrt.py
+cd /root/low_cost_ws/src/pyrobot/robots/LoCoBot/locobot_control
+python rrt.py
 ```
 
 For mpc demo
@@ -31,7 +34,8 @@ For mpc demo
 roslaunch locobot_control main.launch use_sim:=true
 
 # In a new terminal
-rosrun locobot_control rrt.py
+cd /root/low_cost_ws/src/pyrobot/robots/LoCoBot/locobot_control/scripts/Traj
+python main2.py
 ```
 
 For RL demo
